@@ -21,3 +21,11 @@ ul.liste li:nth-child(odd) {
 ul.liste li:nth-child(even) {
   background-color: hotpink;
 }
+
+ul.liste li::after {
+  content: "✔️";
+}
+
+ul.liste li::before {
+  content: "* ";
+}
