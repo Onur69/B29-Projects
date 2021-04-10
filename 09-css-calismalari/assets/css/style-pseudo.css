@@ -1,0 +1,23 @@
+ul.liste li {
+  color: darkred;
+}
+
+ul.liste li:first-child {
+  font-weight: bold;
+}
+
+ul.liste li:last-child {
+  font-style: italic;
+}
+
+ul.liste li:nth-child(3) {
+  color: darkturquoise;
+}
+
+ul.liste li:nth-child(odd) {
+  background-color: gray;
+}
+
+ul.liste li:nth-child(even) {
+  background-color: hotpink;
+}
