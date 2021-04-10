@@ -21,14 +21,19 @@ nav.solmenu li:hover {
   color: darkred;
 }
 
+nav.solmenu li::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f054";
+}
+
 nav.solmenu a:hover {
   color: darkred;
 }
 
 nav.solmenu ul {
-  list-style-position: inside;
+  list-style-type: none;
   padding: 0;
-  list-style-type: "💢";
 }
 
 nav.solmenu .aktif {
