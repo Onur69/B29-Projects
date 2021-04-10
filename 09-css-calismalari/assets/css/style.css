@@ -1,0 +1,39 @@
+/*
+1. HEADER
+2. MENU
+3. SOL MENU
+4. FOOTER
+*/
+
+/*1. HEADER */
+* {
+  font-size: 1rem;
+  color: #000000;
+}
+
+p {
+  color: rgb(158, 6, 14);
+  text-align: justify;
+  font-size: 1.5rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: orangered;
+  text-align: center;
+}
+
+a {
+  color: darkblue;
+}
+
+.kurumsal {
+  text-align: center;
+  font-size: 2rem;
+  background-color: lightcoral;
+  color: maroon;
+}
+
+.baslik {
+  color: green;
+}

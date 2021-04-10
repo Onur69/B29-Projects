@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form İşlemleri</title>
+</head>
+<body>
+
+	<form action="kaydet.php">
+
+		<label for="isim">Ad <font color="red">*</font></label>
+		<input id="isim" type="text" required="" minlength="3" maxlength="20">
+		<br>
+
+		<label for="sifre">Şifre</label>
+		<input id="sifre" type="password">
+		<br>
+
+		<label>Yaş</label>
+		<input type="number" min="10" max="100">
+		<br>
+
+		<label>Ara</label>
+		<input type="search">
+		<br>
+
+		<label>web sitesi</label>
+		<input type="url">
+		<br>
+
+		<label>Eposta</label>
+		<input type="email" autocomplete="off">
+		<br>
+
+		<label>Telefon</label>
+		<input type="tel">
+		<br>
+
+
+		<b>Hobiler</b><br>
+		<input id="hobi1" type="checkbox" name="hobi1" value="resim" checked>
+		<label for="hobi1">Resim</label><br>
+
+		<input id="hobi2" type="checkbox" name="hobi2" value="muzik">
+		<label for="hobi2">Müzik</label><br>
+
+		<b>Cinsiyet</b><br>
+		<input id="cinsiyetE" type="radio" name="cinsiyet" value="bay">
+		<label for="cinsiyetE">Bay</label><br>
+
+		<input id="cinsiyetK" type="radio" name="cinsiyet" value="bayan">
+		<label for="cinsiyetK">Bayan</label><br>
+
+
+		<b>Mezuniyet</b><br>
+		<input id="mezuniyetL" type="radio" name="mezuniyet" value="lisans">
+		<label for="mezuniyetL">Lisans</label><br>
+
+		<input id="mezuniyetU" type="radio" name="mezuniyet" value="lisansüstü" checked="">
+		<label for="mezuniyetU">Lisanüstü</label><br>
+
+		<label>Profil fotoğrafınızı yükleyiniz</label>
+		<input type="file" name="profil"><br>
+
+		<label>Favori renginizi seçiniz</label>
+		<input type="color" name="favorirenk" value="#FF0000"><br>
+
+		<label>Maaş beklentiniz</label>
+		2000 <input type="range" name="maas" min="2000" max="10000" value="9000"> 10000<br>
+
+
+		<label>Doğum tarihinizi seçiniz</label>
+		<input type="date" name="dogumt" value="" min="2000-01-01" max="2021-01-01"><br>
+
+
+		<label>İnterview saati</label>
+		<input type="time" name="isgorusmesi" value="18:30" min="10:00" max="18:00"><br>
+
+
+		<label>Randevu tarih ve saati</label>
+		<input type="datetime-local" name="randevu" value="2021-05-03T17:35"><br>
+
+		<label>Ay seçiniz</label>
+		<input type="month" name="ay" value="2021-06"><br>
+
+		<label>Hafta seçiniz</label>
+		<input type="week" name="hafta" value="2025-W21"><br>
+
+
+		<label>Ülke seçiniz</label>
+		<select name="ulke">
+			<option>Seçiniz</option>
+			<option value="TR">Türkiye</option>
+			<option value="D">Almanya</option>
+			<option value="GR">Yunanistan</option>
+			<option value="US">USA</option>
+		</select><br>
+
+
+		<textarea name="cv" rows="10" cols="100"></textarea><br>
+
+
+
+		<input type="hidden" name="kod" value="2735675723">
+
+		<input type="button" value="Gönder">
+		<input type="submit" value="Kaydet">
+		<input type="reset" value="Temizle">
+
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+
+	</form>
+
+
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+* {
+  font-family: Roboto;
+}
+
+a {
+  text-decoration: none;
+  color: darkorange;
+}
+
+a:visited {
+  color: magenta;
+}
+
+a:hover {
+  background-color: olive;
+  font-size: 2rem;
+  color: purple;
+}
+
+a:active {
+  background-color: red;
+}
+
+body:hover {
+  background-color: royalblue;
+}
+
+.welcome {
+  text-decoration: overline;
+  font-style: italic;
+  font-weight: 900;
+}
+
+.lorem {
+  word-spacing: 0.5rem;
+  letter-spacing: 0.2rem;
+  line-height: 1.5rem;
+}
