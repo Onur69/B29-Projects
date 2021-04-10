@@ -1,0 +1,23 @@
+body {
+  font-family: Roboto;
+}
+
+table.shopping-cart {
+  width: 70%;
+  background-color: rgb(221, 221, 221);
+}
+
+table.shopping-cart td,
+table.shopping-cart th {
+  padding: 0.2rem;
+}
+
+table.shopping-cart tfoot,
+table.shopping-cart thead {
+  background-color: rgb(31, 31, 31);
+  color: white;
+}
+
+table.shopping-cart tbody tr:nth-child(odd) {
+  background-color: rgb(158, 158, 158);
+}
