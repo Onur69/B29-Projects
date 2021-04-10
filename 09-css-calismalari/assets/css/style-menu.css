@@ -2,13 +2,38 @@
   font-family: "Roboto", sans-serif;
 }
 
+/* SOL MENU */
+
 .solmenu {
   background-color: gray;
-  text-align: center;
+  text-align: left;
   width: 10rem;
+}
+
+.link {
+  text-decoration: none;
+  font-weight: 400;
+  color: black;
+}
+
+li:hover {
+  background-color: chartreuse;
+  color: darkred;
+}
+
+.link:hover {
+  color: darkred;
+}
+
+.liste {
+  list-style-position: inside;
+  padding: 0;
+  list-style-type: "💢";
 }
 
 .aktif {
   background-color: rgb(44, 44, 44);
   color: white;
 }
+
+/* SOL MENU */
