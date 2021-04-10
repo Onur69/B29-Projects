@@ -27,5 +27,7 @@ ul.liste li::after {
 }
 
 ul.liste li::before {
-  content: "* ";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f054";
 }
