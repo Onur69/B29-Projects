@@ -4,34 +4,34 @@
 
 /* SOL MENU */
 
-.solmenu {
+nav.solmenu {
   background-color: gray;
   text-align: left;
   width: 10rem;
 }
 
-.link {
+nav.solmenu a {
   text-decoration: none;
   font-weight: 400;
   color: black;
 }
 
-li:hover {
+nav.solmenu li:hover {
   background-color: chartreuse;
   color: darkred;
 }
 
-.link:hover {
+nav.solmenu a:hover {
   color: darkred;
 }
 
-.liste {
+nav.solmenu ul {
   list-style-position: inside;
   padding: 0;
   list-style-type: "💢";
 }
 
-.aktif {
+nav.solmenu .aktif {
   background-color: rgb(44, 44, 44);
   color: white;
 }
