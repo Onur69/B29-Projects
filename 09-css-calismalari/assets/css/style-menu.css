@@ -8,6 +8,7 @@ nav.solmenu {
   background-color: gray;
   text-align: left;
   width: 10rem;
+  display: none;
 }
 
 nav.solmenu a {
@@ -39,6 +40,19 @@ nav.solmenu ul {
 nav.solmenu .aktif {
   background-color: rgb(44, 44, 44);
   color: white;
+}
+
+input.anahtar:checked + .solmenu {
+  display: block;
+}
+
+input.anahtar {
+  display: none;
+}
+
+.anahtar-label {
+  background-color: tomato;
+  padding: 0.3rem;
 }
 
 /* SOL MENU */
