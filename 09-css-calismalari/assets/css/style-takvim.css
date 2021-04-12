@@ -4,7 +4,7 @@
 
 div.takvim {
   background-color: rgb(255, 155, 23);
-  width: 60%;
+  width: 40%;
   text-align: center;
   padding: 0.8rem;
   color: white;
@@ -17,5 +17,20 @@ div.takvim span::after {
 }
 
 div.takvim span:last-child::after {
-  content: "";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f054";
+  color: black;
+}
+
+div.takvim span:first-child::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f053";
+  color: black;
+  padding: 0.8rem;
+}
+
+div.takvim .active {
+  color: black;
 }
