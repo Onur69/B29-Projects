@@ -1,0 +1,11 @@
+.kutu1 p {
+  color: red;
+}
+
+.kutu2 > p {
+  color: blue;
+}
+
+.kutu2 div > p {
+  color: green;
+}
