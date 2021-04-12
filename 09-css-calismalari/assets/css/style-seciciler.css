@@ -9,3 +9,11 @@
 .kutu2 div > p {
   color: green;
 }
+
+.kutu1 + div {
+  background-color: hotpink;
+}
+
+.kutu4 ~ div {
+  background-color: hotpink;
+}
