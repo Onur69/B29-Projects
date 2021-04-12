@@ -11,7 +11,7 @@
 }
 
 .kutu1 + div {
-  background-color: hotpink;
+  background-color: orangered;
 }
 
 .kutu4 ~ div {

@@ -1,0 +1,13 @@
+.kutu {
+  width: 100%;
+  height: 100px;
+  background-color: orangered;
+}
+
+.anahtar {
+  display: none;
+}
+
+.anahtar:checked + div {
+  background-color: royalblue;
+}
