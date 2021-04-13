@@ -1,0 +1,13 @@
+.buton {
+  padding: 1rem;
+  margin: 2rem;
+  background-color: chocolate;
+}
+
+.buton:first-child {
+  margin-left: 0;
+}
+
+.buton:last-child {
+  margin-right: 0;
+}
