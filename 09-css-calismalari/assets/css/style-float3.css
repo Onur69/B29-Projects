@@ -8,3 +8,15 @@ body {
   background-color: chocolate;
   margin: 1rem;
 }
+
+.kutu-sol {
+  float: left;
+}
+
+.kutu-sag {
+  float: right;
+}
+
+.temizle {
+  clear: both;
+}
