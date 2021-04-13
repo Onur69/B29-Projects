@@ -1,6 +1,7 @@
 html,
 body {
   height: 100%;
+  margin: 0;
 }
 
 .container1 {
@@ -9,12 +10,24 @@ body {
 }
 
 .container2 {
-  width: 90%;
+  width: 60%;
   height: 80%;
   background-color: yellow;
 }
 
 .container2 .msg {
   width: 50%;
+  background-color: red;
+}
+
+.container3 {
+  width: 60vw;
+  height: 50vh;
+  background-color: chartreuse;
+}
+
+.container3 .msg {
+  width: 50vw;
+  height: 50vh;
   background-color: red;
 }
