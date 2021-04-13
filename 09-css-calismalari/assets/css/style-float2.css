@@ -1,0 +1,25 @@
+.kutu {
+  width: 100px;
+  height: 100px;
+  float: left;
+}
+
+.kutu1 {
+  background-color: chocolate;
+}
+
+.kutu2 {
+  background-color: rgb(139, 20, 130);
+}
+
+.kutu3 {
+  background-color: rgb(31, 156, 14);
+}
+
+.kutu4 {
+  background-color: rgb(155, 25, 25);
+}
+
+.clearfix {
+  clear: both;
+}
