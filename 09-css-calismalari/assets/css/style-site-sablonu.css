@@ -21,11 +21,13 @@ aside {
   padding: 1rem;
   float: left;
   width: 20%;
+  box-sizing: border-box;
 }
 
 main {
-  float: right;
+  float: left;
   width: 80%;
+  box-sizing: border-box;
 }
 
 footer {
