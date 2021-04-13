@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+}
+
+header {
+  background-color: red;
+  text-align: center;
+  color: white;
+  padding: 2rem;
+}
+
+nav {
+  background-color: blue;
+  text-align: center;
+  padding: 0.2rem;
+}
+
+aside {
+  background-color: yellow;
+  text-align: center;
+  padding: 1rem;
+  float: left;
+  width: 20%;
+}
+
+main {
+  float: right;
+  width: 80%;
+}
+
+footer {
+  background-color: gray;
+  text-align: center;
+  color: white;
+  padding: 2rem;
+}
+
+.clearfix {
+  clear: both;
+}
