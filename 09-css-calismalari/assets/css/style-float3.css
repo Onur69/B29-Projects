@@ -1,0 +1,10 @@
+body {
+  background-color: dimgray;
+}
+
+.kutu {
+  width: 100px;
+  height: 100px;
+  background-color: chocolate;
+  margin: 1rem;
+}

@@ -6,14 +6,17 @@
 
 .kutu1 {
   background-color: chocolate;
+  width: 20%;
 }
 
 .kutu2 {
   background-color: rgb(139, 20, 130);
+  width: 60%;
 }
 
 .kutu3 {
   background-color: rgb(31, 156, 14);
+  width: 20%;
 }
 
 .kutu4 {
