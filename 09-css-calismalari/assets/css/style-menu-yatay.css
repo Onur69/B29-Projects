@@ -13,10 +13,10 @@ nav.menu-yatay ul {
 nav.menu-yatay ul li {
   display: inline-block;
   background-color: chocolate;
+  margin-right: 1rem;
 }
 
 nav.menu-yatay ul li a {
-  display: inline-block;
   padding: 0.5rem 1rem;
   background-color: rgb(204, 204, 204);
 }
