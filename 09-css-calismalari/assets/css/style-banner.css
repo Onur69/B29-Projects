@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  font-family: Roboto;
+}
+
+section.banner {
+  background-image: url("../img/image-05.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  text-align: center;
+  padding: 5rem;
+  box-sizing: border-box;
+}
+
+section p,
+section h1 {
+  margin: 0;
+  padding: 0;
+}
+
+section h1 {
+  font-size: 5rem;
+}
+
+section p {
+  font-size: 1.4rem;
+}
