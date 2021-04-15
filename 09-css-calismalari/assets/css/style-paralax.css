@@ -1,0 +1,14 @@
+.banner {
+  height: 50vh;
+  background-position: top center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.banner1 {
+  background-image: url("../img/image-01.jpg");
+}
+
+.banner2 {
+  background-image: url("../img/image-05.jpg");
+}
