@@ -1,0 +1,33 @@
+.mesaj1 {
+  border: 3px dotted red;
+  padding: 0.4rem;
+}
+
+.mesaj2 {
+  border-top: 3px solid blue;
+  padding: 0.4rem;
+}
+
+.mesaj3 {
+  border-left: 3px solid blue;
+  border-right: 3px solid blue;
+  padding: 0.4rem;
+}
+
+.mesaj4 {
+  border: 1px solid green;
+  padding: 0.4rem;
+  border-radius: 0.4rem;
+}
+
+.mesaj5 {
+  background-image: linear-gradient(pink, red);
+  padding: 0.4rem;
+  border-radius: 0.5rem 0 0.5rem 0;
+}
+
+.mesaj6 {
+  background-color: greenyellow;
+  padding: 0.4rem;
+  border-radius: 0.5rem;
+}

@@ -1,0 +1,8 @@
+div.box {
+  background-color: greenyellow;
+  width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+  box-sizing: border-box;
+}
