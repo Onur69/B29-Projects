@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  font-family: Roboto;
+}
+
+section.banner .bg {
+  background-image: url("../img/image-05.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 50vh;
+  text-align: center;
+  padding: 5rem;
+  box-sizing: border-box;
+}
+
+section.banner p,
+section.banner h1 {
+  margin: 0;
+  padding: 0;
+}
+
+section.banner h1 {
+  font-size: 5rem;
+}
+
+section.banner p {
+  font-size: 1.4rem;
+}
+
+section.banner .butonlar {
+  text-align: center;
+}
+
+section.banner .butonlar span {
+  width: 5vw;
+  height: 2vh;
+  background-color: gray;
+  display: inline-block;
+  margin: 1rem;
+}
+
+section.banner .butonlar span.aktif {
+  background-color: violet;
+}
