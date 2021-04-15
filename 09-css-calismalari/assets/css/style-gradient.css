@@ -1,0 +1,58 @@
+h1 {
+  height: 20vh;
+}
+
+h1.baslik1 {
+  background-image: linear-gradient(red, blue);
+}
+
+h1.baslik2 {
+  background-image: linear-gradient(
+    rgb(240, 27, 27),
+    rgb(23, 112, 228),
+    rgb(126, 95, 10)
+  );
+}
+
+h1.baslik3 {
+  background-image: linear-gradient(
+    to right,
+    rgb(240, 27, 27),
+    rgb(23, 112, 228),
+    rgb(126, 95, 10)
+  );
+}
+
+h1.baslik4 {
+  background-image: linear-gradient(
+    30deg,
+    rgb(240, 27, 27),
+    rgb(23, 112, 228),
+    rgb(126, 95, 10)
+  );
+}
+
+h1.baslik4 {
+  background-image: linear-gradient(
+    30deg,
+    rgb(240, 27, 27) 60%,
+    rgb(23, 112, 228),
+    rgb(126, 95, 10)
+  );
+}
+
+h1.baslik5 {
+  background-image: radial-gradient(red, blue);
+}
+
+h1.baslik6 {
+  background-image: radial-gradient(circle, red, blue);
+}
+
+h1.baslik7 {
+  background-image: radial-gradient(circle, red, blue, rgb(82, 6, 78));
+}
+
+h1.baslik8 {
+  background-image: radial-gradient(circle, red, blue, rgb(82, 6, 78) 50%);
+}
