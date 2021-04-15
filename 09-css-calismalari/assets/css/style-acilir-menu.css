@@ -1,0 +1,26 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.9rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav.menu {
+  width: 10vw;
+}
+
+nav.menu .buton {
+  background-color: tomato;
+  padding: 0.3rem;
+  text-align: center;
+}
+
+nav.menu ul {
+  display: none;
+}
+
+nav.menu:hover ul {
+  display: block;
+}
