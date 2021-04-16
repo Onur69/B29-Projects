@@ -1,0 +1,15 @@
+button {
+  padding: 0.5rem 1rem;
+  background-image: linear-gradient(rgb(226, 226, 2), rgb(116, 85, 2));
+  border: 0;
+  border-radius: 3rem;
+}
+
+button i {
+  margin-right: 0.3rem;
+}
+
+button:hover {
+  background-image: linear-gradient(to top, rgb(226, 226, 2), rgb(116, 85, 2));
+  color: white;
+}

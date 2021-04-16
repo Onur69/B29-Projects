@@ -1,7 +1,7 @@
 .banner {
   height: 50vh;
-  background-position: top center;
   background-size: cover;
+  background-position: top center;
   background-attachment: fixed;
 }
 
