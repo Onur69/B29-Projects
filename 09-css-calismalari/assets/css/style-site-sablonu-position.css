@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: tomato;
+}
+
+nav.navbar-top {
+  background-color: rgb(34, 34, 34);
+  color: rgb(175, 175, 175);
+}
+
+nav.navbar-main {
+  background-color: rgb(214, 214, 214);
+  position: sticky;
+  top: 0;
+}
+
+nav.navbar-main > div:first-child,
+nav.navbar-top > div:first-child {
+  padding: 0.4rem;
+  float: left;
+}
+
+nav.navbar-main .menu-main,
+nav.navbar-top .menu-top {
+  padding: 0.4rem;
+  float: right;
+}
+
+nav.navbar-main .menu-main {
+  padding-top: 1.2rem;
+}
+
+main {
+  padding: 2rem;
+}
+
+.whatsapp {
+  font-size: 2rem;
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  background-color: rgb(6, 138, 24);
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  padding: 0.4rem;
+  text-align: center;
+  color: white;
+}
+
+.clearfix {
+  clear: both;
+}
