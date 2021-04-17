@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  font-family: Roboto;
+}
+
+.sol-menu {
+  width: 20vw;
+  height: 100vh;
+  background-color: rgb(255, 179, 56);
+  position: absolute;
+  top: 0;
+  left: -17vw;
+  transition: left 1s;
+}
+
+.sol-menu .title {
+  position: relative;
+  background-color: rgb(184, 113, 0);
+  color: white;
+  padding: 0.3rem;
+}
+
+.sol-menu .title i {
+  position: absolute;
+  right: 0.5rem;
+}
+
+.sol-menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 1rem;
+}
+
+.sol-menu ul a {
+  text-decoration: none;
+  color: teal;
+}
+
+.anahtar:checked + .sol-menu {
+  left: 0;
+}
+
+.anahtar {
+  display: none;
+}
+
+header {
+  height: 10vh;
+  background-color: red;
+}
