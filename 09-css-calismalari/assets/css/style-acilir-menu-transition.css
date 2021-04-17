@@ -19,7 +19,7 @@ nav.menu .buton {
 
 nav.menu ul {
   opacity: 0;
-  transition: opacity 1sn;
+  transition: opacity 1s ease-in;
 }
 
 nav.menu:hover ul {
