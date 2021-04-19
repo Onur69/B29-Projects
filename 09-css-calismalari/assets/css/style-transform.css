@@ -1,0 +1,25 @@
+.mesaj1 {
+  transform: translate(2rem, 3rem);
+}
+
+.mesaj2 {
+  background-color: blueviolet;
+  transform: rotateX(80deg);
+}
+
+.mesaj3 {
+  background-color: rgb(43, 204, 51);
+  transform: rotateY(180deg);
+}
+
+.mesaj4 {
+  display: inline-block;
+  background-color: rgb(204, 17, 11);
+  transform: rotate(-45deg);
+}
+
+.mesaj5 {
+  display: inline-block;
+  background-color: rgb(15, 151, 67);
+  transform: scale(3);
+}
