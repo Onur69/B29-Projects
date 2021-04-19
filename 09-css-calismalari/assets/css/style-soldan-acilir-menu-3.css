@@ -2,3 +2,24 @@ body {
   margin: 0;
   font-family: Roboto;
 }
+
+.sol-menu {
+  width: 20vw;
+  background-color: coral;
+}
+
+.sol-menu .title {
+  background-color: rgb(161, 64, 29);
+  color: white;
+  padding: 0.3rem;
+  position: relative;
+}
+
+.sol-menu .title label {
+  position: absolute;
+  right: 0.3rem;
+}
+
+.anahtar {
+  display: none;
+}
