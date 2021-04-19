@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  font-family: Roboto;
+}
+
+.sol-menu {
+  width: 20vw;
+  background-color: coral;
+  position: absolute;
+  left: -17vw;
+  top: 0;
+  height: 100vh;
+  transition: left 1s ease-out;
+}
+
+.sol-menu .title {
+  background-color: rgb(161, 64, 29);
+  color: white;
+  padding: 0.3rem;
+  position: relative;
+}
+
+.sol-menu .title label {
+  position: absolute;
+  right: 0.3rem;
+}
+
+.sol-menu .title label {
+  color: red;
+  transition: color 1s, transform 1s;
+}
+
+.anahtar {
+  display: none;
+}
+
+.anahtar:checked + .sol-menu {
+  left: 0;
+}
+
+.anahtar:checked + .sol-menu .title label {
+  color: blue;
+  transform: rotate(180deg);
+}
+
+.sol-menu ul {
+  list-style-type: none;
+  padding-left: 1.5rem;
+}
+
+.sol-menu li {
+  line-height: 1.5rem;
+}
+
+.sol-menu a {
+  text-decoration: none;
+  color: rgb(33, 34, 2);
+}
