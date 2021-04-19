@@ -6,6 +6,11 @@ body {
 .sol-menu {
   width: 20vw;
   background-color: coral;
+  position: absolute;
+  left: -17vw;
+  top: 0;
+  height: 100vh;
+  transition: left 1s ease-out;
 }
 
 .sol-menu .title {
@@ -20,6 +25,34 @@ body {
   right: 0.3rem;
 }
 
+.sol-menu .title label::after {
+  content: "\f054";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
 .anahtar {
   display: none;
+}
+
+.anahtar:checked + .sol-menu {
+  left: 0;
+}
+
+.anahtar:checked + .sol-menu label::after {
+  content: "\f053";
+}
+
+.sol-menu ul {
+  list-style-type: none;
+  padding-left: 1.5rem;
+}
+
+.sol-menu li {
+  line-height: 1.5rem;
+}
+
+.sol-menu a {
+  text-decoration: none;
+  color: rgb(33, 34, 2);
 }
