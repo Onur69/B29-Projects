@@ -1,3 +1,9 @@
+:root {
+  --renk1: rgb(125, 137, 248);
+  --renk2: rgb(84, 72, 255);
+  --renk3: rgb(56, 192, 255);
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -8,7 +14,9 @@ body {
 }
 
 nav.ana-menu {
-  background-image: linear-gradient(rgb(243, 207, 6), rgb(139, 107, 0));
+  background-image: linear-gradient(var(--renk1), var(--renk2));
+  border-radius: 1rem;
+  border: 1px solid var(--renk2);
 }
 
 nav.ana-menu ul {
@@ -20,8 +28,18 @@ nav.ana-menu ul {
 nav.ana-menu a {
   text-decoration: none;
   color: black;
+  padding: 1rem 2rem;
+  display: inline-block;
+}
+
+nav.ana-menu a:hover {
+  background-image: linear-gradient(var(--renk2), var(--renk1));
 }
 
 nav.ana-menu ul li {
-  border-right: 1px solid gray;
+  border-right: 1px solid var(--renk3);
+}
+
+nav.ana-menu ul li:first-child {
+  border-left: 1px solid var(--renk3);
 }
