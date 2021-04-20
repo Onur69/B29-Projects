@@ -8,5 +8,10 @@ h1 {
 }
 
 ul li {
-  color: var(--renk2);
+  color: var(--renk1);
+}
+
+ul {
+  background-color: var(--renk2);
+  border-color: var(--renk1);
 }

@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.container2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  background-color: coral;
+}
+
+.container2 div {
+  width: 10vw;
+  background-color: blueviolet;
+  margin: 1rem;
+}
+
+.container div {
+  width: 10vw;
+  height: 10vw;
+  background-color: blueviolet;
+  margin: 1rem;
+}
+
+ul {
+  display: flex;
+}
+
+ul li {
+  width: 10vw;
+  height: 10vw;
+  background-color: rgb(22, 158, 17);
+  margin: 1rem;
+}
