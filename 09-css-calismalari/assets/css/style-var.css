@@ -1,0 +1,12 @@
+:root {
+  --renk1: rgb(15, 180, 15);
+  --renk2: rgb(105, 41, 255);
+}
+
+h1 {
+  background-color: var(--renk1);
+}
+
+ul li {
+  color: var(--renk2);
+}
