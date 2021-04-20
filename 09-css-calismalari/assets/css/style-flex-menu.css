@@ -1,0 +1,27 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 2rem;
+}
+
+nav.ana-menu {
+  background-image: linear-gradient(rgb(243, 207, 6), rgb(139, 107, 0));
+}
+
+nav.ana-menu ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+}
+
+nav.ana-menu a {
+  text-decoration: none;
+  color: black;
+}
+
+nav.ana-menu ul li {
+  border-right: 1px solid gray;
+}
