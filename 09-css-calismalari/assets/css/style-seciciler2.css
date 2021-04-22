@@ -1,0 +1,116 @@
+/*1. Tüm elementler */
+/*
+* {
+  color: red;
+}
+
+*/
+
+/*2. Sayfadaki tüm h2 ler */
+/*
+h2 {
+  color: red;
+}
+*/
+
+/*3. Sayfadaki tüm section-header isimli elementler*/
+
+/*
+.section-header {
+  color: red;
+}
+*/
+
+/*4. Sayfadaki tüm section-header isimli elementlerin içindeki h2 ler*/
+
+/*
+.section-header h2 {
+  color: red;
+}
+*/
+
+/*5. Body içindeki 3.section */
+
+/*
+section:nth-child(3) {
+  color: red;
+}
+*/
+
+/*6. top-bar ismindeki section içindeki img */
+/*
+section.top-bar img {
+  width: 400px;
+}
+*/
+
+/*7. top-bar içindeki nav içindeki linkler*/
+
+/*
+.top-bar nav a {
+  color: red;
+}
+*/
+
+/*8. parent i sosyal-medya olan linkler*/
+
+/*
+.sosyal-medya > a {
+  color: red;
+}
+*/
+
+/*9. parent ı section olan nav ların içindeki li ler*/
+/*
+section > nav li {
+  color: red;
+}
+*/
+
+/*10. top-bar dan sonraki section*/
+/*
+.top-bar + section {
+  color: red;
+}
+*/
+
+/*11. parenti kutu olan img lerden sonraki span lar*/
+/*
+.kutu > img ~ span {
+  color: red;
+}
+*/
+/*12. top-bar içindeki nav içindeki ilk li den sonraki li ler*/
+/*
+.top-bar nav li:first-child ~ li {
+  color: red;
+}
+*/
+
+/*13. referanslar içindeki kutuların üzerine gelindiğinde span lar*/
+/*
+.referanslar .kutu:hover span {
+  color: red;
+}
+*/
+
+/*14. hizmetler içindeki parenti kutu olan h3 lerden önce içerik eklenecek*/
+/*
+.hizmetler .kutu > h3::before {
+  content: "*********";
+}
+*/
+
+/*15. top-bar içinde 3. li nin üzerine geldiğinde a dan sonraya içerik eklenecek*/
+/*
+.top-bar li:nth-child(3):hover a::after {
+  content: "*********";
+}
+*/
+/*16. top-bar içindeki ilk li nin üzerine geldiğnde, bu li den sonraki li içindeki 
+a nın sonuna içerik eklenecek
+*/
+
+.top-bar li:first-child:hover + li a::after {
+  content: "************";
+}
