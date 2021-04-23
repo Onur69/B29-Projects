@@ -11,6 +11,10 @@
 */
 
 /* GENEL */
+:root {
+  --renk1: rgb(134, 1, 116);
+}
+
 body {
   font-family: Nunito;
   font-size: 1rem;
@@ -32,5 +36,44 @@ header {
 }
 
 header nav {
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
+
+header nav ul {
+  display: flex;
+
+  list-style-type: none;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  color: black;
+  transition: all 1s;
+}
+
+header nav ul i {
+  color: var(--renk1);
+}
+
+header nav ul li a:hover i,
+header nav ul li a:hover {
+  background-color: var(--renk1);
+  color: white;
+  border-radius: 1rem;
+}
+
 /* HEADER */
+
+/* BANNER */
+section.banner {
+  background-image: url("../img/header-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+}
+/* BANNER */
