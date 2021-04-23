@@ -1,0 +1,36 @@
+/*
+1. GENEL
+2. HEADER
+3. BANNER
+4. HAKKIMDA
+5. HIZMETLER
+6. MUSTERILER
+7. REFERANSLAR
+8. ILETİŞİM
+9. FOOTER
+*/
+
+/* GENEL */
+body {
+  font-family: Nunito;
+  font-size: 1rem;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+/* GENEL */
+
+/* HEADER */
+header {
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+
+header nav {
+}
+/* HEADER */
