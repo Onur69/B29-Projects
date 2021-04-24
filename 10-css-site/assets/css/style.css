@@ -13,6 +13,7 @@
 /* GENEL */
 :root {
   --renk1: rgb(134, 1, 116);
+  --renk2: rgba(134, 1, 116, 0.849);
 }
 
 body {
@@ -25,6 +26,20 @@ video {
   max-width: 100%;
   height: auto;
 }
+
+button {
+  background-color: rgba(0, 0, 0, 0.582);
+  color: white;
+  border: 1px solid white;
+  border-radius: 3rem;
+  padding: 1rem 2rem;
+  font-weight: 700;
+}
+
+button:hover {
+  background-color: var(--renk2);
+}
+
 /* GENEL */
 
 /* HEADER */
@@ -76,16 +91,50 @@ section.banner {
   background-position: center center;
   height: 100vh;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 section.banner::after {
   content: "";
-  background-color: rgb(0, 0, 0, 0.5);
-  width: 100%;
-  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+section.banner .yazilar {
   z-index: 3;
+  text-align: center;
+  color: white;
+}
+
+section.banner .yazilar .hosgeldiniz {
+  font-size: 1.3rem;
+}
+
+section.banner .yazilar h1 {
+  font-size: 3rem;
+}
+
+section.banner .yazilar h2 {
+  font-size: 1.2rem;
+  font-weight: 100;
+}
+
+section.banner a {
+  color: white;
+}
+
+section.banner .mouse {
+  margin-top: 2rem;
+}
+
+section.banner button {
+  margin-top: 2rem;
 }
 /* BANNER */
