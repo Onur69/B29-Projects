@@ -45,6 +45,28 @@ button:hover {
   background-color: var(--renk2);
 }
 
+.bolum-basligi {
+  padding: 2rem 0;
+}
+
+.bolum-basligi h2::before {
+  content: "\f789";
+  display: block;
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 400;
+  font-size: 3rem;
+  color: var(--renk1);
+}
+
+.bolum-basligi h2 {
+  font-size: 2rem;
+  letter-spacing: 0.5rem;
+}
+
+.bolum-basligi p {
+  color: var(--renk3);
+}
+
 /* GENEL */
 
 /* HEADER */
@@ -148,12 +170,14 @@ section.banner button {
 /* MAIN */
 main section {
   padding: 6rem;
+  text-align: center;
 }
 /* MAIN */
 
 /* HAKKIMDA */
 section.hakkimda .yazilar {
   padding-left: 2rem;
+  text-align: left;
 }
 
 section.hakkimda .yazilar h2 {
@@ -196,3 +220,7 @@ section.hakkimda .sosyal-medya i {
 }
 
 /* HAKKIMDA */
+
+/* HİZMETLER */
+
+/* HİZMETLER */
