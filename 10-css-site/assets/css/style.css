@@ -14,6 +14,11 @@
 :root {
   --renk1: rgb(134, 1, 116);
   --renk2: rgba(134, 1, 116, 0.849);
+  --renk3: rgb(144, 144, 144);
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -48,6 +53,7 @@ header {
   position: sticky;
   top: 0;
   background-color: white;
+  z-index: 999;
 }
 
 header nav {
@@ -138,3 +144,55 @@ section.banner button {
   margin-top: 2rem;
 }
 /* BANNER */
+
+/* MAIN */
+main section {
+  padding: 6rem;
+}
+/* MAIN */
+
+/* HAKKIMDA */
+section.hakkimda .yazilar {
+  padding-left: 2rem;
+}
+
+section.hakkimda .yazilar h2 {
+  font-size: 2rem;
+}
+
+section.hakkimda .yazilar h4 {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+section.hakkimda .yazilar i {
+  color: var(--renk1);
+}
+
+section.hakkimda .yazilar p {
+  color: var(--renk3);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+section.hakkimda .sosyal-medya a {
+  background-color: white;
+  border: 1px solid var(--renk3);
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  display: inline-block;
+  font-size: 1.5rem;
+  position: relative;
+  margin-right: 1rem;
+}
+
+section.hakkimda .sosyal-medya i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+}
+
+/* HAKKIMDA */
