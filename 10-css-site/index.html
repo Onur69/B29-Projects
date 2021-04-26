@@ -32,7 +32,7 @@
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
     <link href="assets/css/style.css" rel="stylesheet" />
   </head>
-  <body>
+  <body id="ust">
     <header>
       <div class="container">
         <div class="row">
@@ -85,7 +85,7 @@
           Mobil cihaz uyumlu web tasarımı, SEO, grafik tasarımı ve Wordpress
           işlerinizi profesyonellere bırakın.
         </h2>
-        <button>Hemen Teklif Al</button>
+        <a class="btn" href="#iletisim">Hemen Teklif Al</a>
         <div class="mouse">
           <a href="#hakkimda"><i class="fas fa-mouse fa-2x"></i></a>
         </div>
@@ -305,17 +305,19 @@
             <div class="col-4">
               <i class="fas fa-phone"></i>
               <h5>Telefon</h5>
-              <p>+90(555)555 55 55</p>
+              <a href="tel:+905555555555">+90(555)555 55 55</a>
             </div>
             <div class="col-4">
               <i class="fab fa-whatsapp"></i>
               <h5>Whatsapp</h5>
-              <p>+90(555)555 55 55</p>
+              <a href="https://wa.me/905555555555" target="_blank"
+                >+90(555)555 55 55</a
+              >
             </div>
             <div class="col-4">
               <i class="fas fa-envelope"></i>
               <h5>Email</h5>
-              <p>info@lorem.com</p>
+              <a href="mailto:info@lorem.com">info@lorem.com</a>
             </div>
           </div>
 
@@ -329,6 +331,7 @@
                   type="email"
                   name="eposta"
                   placeholder="Eposta adresiniz"
+                  autocomplete="off"
                 />
               </div>
               <div class="col-12">
@@ -355,5 +358,7 @@
       </div>
       <div class="copyright">&copy;2021 copyright by Lorem</div>
     </footer>
+
+    <a href="#ust" class="ust-buton"><i class="fas fa-arrow-up"></i></a>
   </body>
 </html>
