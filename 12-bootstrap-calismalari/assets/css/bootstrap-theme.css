@@ -1,11 +1,34 @@
+:root {
+  --color-primary: #00a818;
+  --color-secondary: #7491a3;
+  --color-dark: #131313;
+}
+
 .bg-primary {
-  background-color: #00a818 !important;
+  background-color: var(--color-primary) !important;
 }
 
 .bg-secondary {
-  background-color: #7491a3 !important;
+  background-color: var(--color-secondary) !important;
 }
 
 .bg-dark {
-  background-color: #131313 !important;
+  background-color: var(--color-dark) !important;
+}
+
+.btn-outline-secondary {
+  color: var(--color-secondary);
+  border-color: var(--color-secondary);
+}
+
+.navbar-dark .navbar-nav .nav-item {
+  margin: auto 0.5rem;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .show > .nav-link,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #fff;
+  background-color: var(--color-primary);
+  border-radius: 2rem;
 }
