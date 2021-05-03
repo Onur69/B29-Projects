@@ -1,3 +1,11 @@
-.bg-danger {
-  background-color: #abad00 !important;
+.bg-primary {
+  background-color: #00a818 !important;
+}
+
+.bg-secondary {
+  background-color: #7491a3 !important;
+}
+
+.bg-dark {
+  background-color: #131313 !important;
 }
