@@ -32,3 +32,8 @@
   background-color: var(--color-primary);
   border-radius: 2rem;
 }
+
+.accordion-button:not(.collapsed) {
+  background-color: chartreuse;
+  color: rgb(243, 9, 9);
+}
