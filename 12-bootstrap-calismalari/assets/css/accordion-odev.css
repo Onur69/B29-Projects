@@ -1,0 +1,76 @@
+section {
+  width: 80%;
+  margin: 5rem auto;
+}
+
+@media (max-width: 768px) {
+  section {
+    width: 95%;
+  }
+}
+
+section.arama {
+  text-align: center;
+  background-image: url("../img/youtube.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  height: 305px;
+}
+
+@media (max-width: 768px) {
+  section.arama {
+    background: none;
+  }
+}
+
+section.arama div {
+  margin-top: 2rem;
+}
+
+section.arama .youtube {
+  color: #ff0000;
+  font-size: 2rem;
+  border-radius: 50%;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.301);
+  width: 3.5rem;
+  height: 3.5rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section.arama .slogan {
+  font-size: 2.3rem;
+  color: #1967d2;
+}
+
+@media (max-width: 768px) {
+  section.arama .slogan {
+    font-size: 2rem;
+  }
+}
+
+section.arama .arama-kutusu {
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.301);
+  border-radius: 0.5rem;
+  padding: 0.7rem;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 1rem;
+  text-align: right;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  section.arama .arama-kutusu {
+    width: 100%;
+  }
+}
+
+section.arama .arama-kutusu input {
+  width: 90%;
+  border: 0;
+  outline: none;
+}
