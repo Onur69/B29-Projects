@@ -1,0 +1,50 @@
+:root {
+  --color-primary: #926dde;
+}
+
+.bg-primary {
+  background-color: var(--color-primary) !important;
+}
+
+.nav-link {
+  text-align: center;
+}
+
+.nav-item.dropdown img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.navbar-collapse form {
+  position: relative;
+}
+
+.navbar-collapse form button {
+  position: absolute;
+  right: 0;
+}
+
+.navbar-collapse {
+  flex-grow: 0;
+}
+
+@media (max-width: 992px) {
+  .navbar-nav {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .nav-item {
+    margin: 1rem;
+  }
+
+  .nav-item:last-child {
+    width: 100%;
+  }
+
+  .navbar-collapse form {
+    margin-top: 1rem;
+  }
+}
