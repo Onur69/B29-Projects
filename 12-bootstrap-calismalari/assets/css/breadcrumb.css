@@ -1,0 +1,15 @@
+.breadcrumb-item + .breadcrumb-item::before {
+  content: "\f054";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.breadcrumb {
+  background-color: rgb(207, 207, 207);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+}
