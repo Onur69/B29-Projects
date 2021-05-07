@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/lib/bootstrap/css/bootstrap.min.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+
+    <style>
+      .tooltip .tooltip-inner {
+        background-color: red;
+      }
+
+      .tooltip .tooltip-arrow::before {
+        border-right-color: red;
+      }
+    </style>
+
+    <title>Tooltip</title>
+  </head>
+  <body style="padding: 3rem">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse vel sit,
+    officiis ab odit, nesciunt eos architecto, dolorum error repellat quas odio
+    similique consequatur? Facere in nam vitae laborum alias?
+    <button
+      type="button"
+      class="btn btn-secondary"
+      data-bs-toggle="tooltip"
+      data-bs-placement="right"
+      data-bs-html="true"
+      title="<b>dfsd</b>fsdfsf"
+    >
+      Göster
+    </button>
+
+    <script src="assets/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      var tooltipTriggerList = [].slice.call(
+        document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      );
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
+      });
+    </script>
+  </body>
+</html>
