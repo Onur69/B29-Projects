@@ -17,9 +17,35 @@
   </head>
   <body>
     <form action="giris.php" class="needs-validation" novalidate>
-      <input type="text" class="form-control" required>
-      <div class="invalid-feedback">Boş geçmeyiniz</div>
-      <button class="btn btn-primary" type="submit">Gönder</button>
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <label for="isim" class="form-label">Adınız</label>
+          <input id="isim" type="text" class="form-control" required maxlength="10" minlength="2">
+          <div class="invalid-feedback">Geçerli bir isim giriniz</div>
+        </div>
+        <div class="col-4">
+          <label for="yas" class="form-label">Yaşınız</label>
+
+          <input id="yas" type="number" class="form-control" required min="12" max="120">
+          <div class="invalid-feedback">En az 12 yaş olmalıdır</div>
+        </div>
+        <div class="col-4">
+          <label for="eposta" class="form-label">Eposta</label>
+
+          <input id="eposta" type="email" class="form-control" required>
+          <div class="invalid-feedback">Geçerli bir eposta giriniz</div>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit">Gönder</button>
+          <button class="btn btn-warning" type="reset">Temizle</button>
+
+        </div>
+      </div>
+
+    </div>
+    
+     
     </form>
   
     
@@ -28,7 +54,7 @@
 
     <script src="assets/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    
+
     <script>
       (function () {
     'use strict'
