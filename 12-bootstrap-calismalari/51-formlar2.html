@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/lib/bootstrap/css/bootstrap.min.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+
+    <title>Formlar</title>
+  </head>
+  <body>
+    <form action="giris.php">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-1">
+            <label for="eposta" class="form-label">Eposta</label>
+          </div>
+          <div class="col-sm-5">
+            <input type="email" class="form-control" id="eposta">
+          </div>
+          <div class="col-sm-1">
+            <label for="sifre" class="form-label">Şifre</label>
+          </div>
+          <div class="col-sm-5">
+            <input type="password" class="form-control" id="sifre">
+          </div>
+          <div class="mb-3">
+            <label for="formFile" class="form-label">Profil resmi seçiniz</label>
+            <input class="form-control" type="file" id="formFile">
+          </div>
+
+          <div>
+            <label for="exampleDataList1" class="form-label">Datalist example</label>
+            <input class="form-control" list="datalistOptions1" id="exampleDataList1" placeholder="Type to search...">
+            <datalist id="datalistOptions1">
+              <option value="1San Francisco">
+              <option value="New York">
+              <option value="Seattle">
+              <option value="Los Angeles">
+              <option value="Chicago">
+            </datalist>
+          </div>
+
+
+          <div>
+            <label for="exampleDataList2" class="form-label">Datalist example</label>
+            <input class="form-control" list="datalistOptions2" id="exampleDataList2" placeholder="Type to search...">
+            <datalist id="datalistOptions2">
+              <option value="2San Francisco">
+              <option value="New York">
+              <option value="Seattle">
+              <option value="Los Angeles">
+              <option value="Chicago">
+            </datalist>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="meslek" id="meslek1">
+            <label class="form-check-label" for="meslek1">
+              Web Designer
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="meslek" id="meslek2" checked>
+            <label class="form-check-label" for="meslek2">
+              Web Developer
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="meslek" id="meslek3">
+            <label class="form-check-label" for="meslek3">
+              Graphic Designer
+            </label>
+          </div>
+
+
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="cinsiyet" id="cinsiyet1">
+            <label class="form-check-label" for="cinsiyet1">
+              Bay
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="cinsiyet" id="cinsiyet2" checked>
+            <label class="form-check-label" for="cinsiyet2">
+              Bayan
+            </label>
+          </div>
+
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+            <label class="form-check-label" for="flexSwitchCheckChecked">Güncellemelerden haberdar olmak istiyorum</label>
+          </div>
+
+
+          <div>
+            <button type="submit" class="btn btn-warning">Giriş Yap</button>
+          </div>
+        </div>
+     </div>
+    </form>
+  
+    
+
+
+
+    <script src="assets/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+   
+</html>
