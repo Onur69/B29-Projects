@@ -1,0 +1,23 @@
+/* COMMON */
+
+:root {
+  --color-primary: #905729;
+}
+
+body {
+  font-family: "Montserrat";
+}
+
+/* COMMON */
+
+/*NAVBAR*/
+
+/*NAVBAR*/
+
+/* BANNER */
+.banner .carousel-item {
+  height: 100vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

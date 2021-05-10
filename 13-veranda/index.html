@@ -128,26 +128,12 @@
           ></button>
         </div>
         <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
-              src="assets/img/slider/slide1.jpg"
-              class="d-block w-100"
-              alt="Güzelbahçe Villa "
-            />
+          <div class="carousel-item active" style="background-image: url('assets/img/slider/slide1.jpg');">
           </div>
-          <div class="carousel-item">
-            <img
-              src="assets/img/slider/slide2.jpg"
-              class="d-block w-100"
-              alt="Güzelbahçe Villa "
-            />
+          <div class="carousel-item" style="background-image: url('assets/img/slider/slide2.jpg');">
           </div>
-          <div class="carousel-item">
-            <img
-              src="assets/img/slider/slide3.jpg"
-              class="d-block w-100"
-              alt="Güzelbahçe Villa "
-            />
+          <div class="carousel-item"  style="background-image: url('assets/img/slider/slide3.jpg');">
+           
           </div>
         </div>
         <button
@@ -181,47 +167,54 @@
       </div>
 
       <form action="">
-        <div class="mb-3">
-          <div class="form-floating mb-3">
-            <input
-              type="text"
-              class="form-control"
-              id="name"
-              placeholder="Ad Soyad"
-              required
-            />
-            <label for="floatingInput">Ad Soyad</label>
-          </div>
-          <div class="form-floating mb-3">
-            <input
-              type="email"
-              class="form-control"
-              id="email"
-              placeholder="Eposta adresiniz"
-              required
-            />
-            <label for="floatingInput">Eposta adresiniz</label>
-          </div>
-          <div class="form-floating mb-3">
-            <input
-              type="text"
-              class="form-control"
-              id="phone"
-              placeholder="Telefon"
-              required
-            />
-            <label for="floatingInput">Telefon</label>
-          </div>
-          <div class="form-floating">
-            <textarea
-              class="form-control"
-              placeholder="Mesajınız"
-              id="message"
-            ></textarea>
-            <label for="floatingTextarea">Mesajınız</label>
-          </div>
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            placeholder="Ad Soyad"
+            required
+          />
+          <label for="floatingInput">Ad Soyad</label>
         </div>
+        <div class="form-floating mb-3">
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="Eposta adresiniz"
+            required
+          />
+          <label for="floatingInput">Eposta adresiniz</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="phone"
+            placeholder="Telefon"
+            required
+          />
+          <label for="floatingInput">Telefon</label>
+        </div>
+        <div class="form-floating">
+          <textarea
+            class="form-control"
+            placeholder="Mesajınız"
+            id="message"
+          ></textarea>
+          <label for="floatingTextarea">Mesajınız</label>
+        </div>
+        <button class="btn btn-primary">
+          <i class="fas fa-paper-plane"></i> Gönder
+        </button>
       </form>
+
+      <div>
+        <a href="#"><i class="fas fa-video"></i> Tanıtım Filmi</a>
+        <a href="#"><i class="fas fa-book"></i> Katalog</a>
+        <a href="#"><i class="fas fa-street-view"></i> Sanal Tur</a>
+      </div>
     </section>
     <main>
       <section id="project" class="project">
