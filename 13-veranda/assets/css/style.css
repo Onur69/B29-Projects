@@ -2,16 +2,24 @@
 
 :root {
   --color-primary: #905729;
+  --color-primary-hover: #693e1a;
 }
 
 body {
   font-family: "Montserrat";
+  position: relative;
 }
 
 /* COMMON */
 
 /*NAVBAR*/
-
+nav.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
 /*NAVBAR*/
 
 /* BANNER */
@@ -21,3 +29,89 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.carousel-control-buttons {
+  position: relative;
+  width: 70%;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  bottom: 1rem;
+  top: auto;
+  z-index: 99;
+}
+
+/* BANNER */
+
+/* CONTACT FORM */
+.contact-form {
+  background-color: rgba(0, 0, 0, 0.589);
+  height: 100vh;
+  width: 30vw;
+  text-align: center;
+  position: fixed;
+  right: 0;
+  top: 0;
+  padding: 7rem 2rem 2rem 2rem;
+}
+
+.contact-form h5 {
+  color: beige;
+  font-weight: 100;
+  font-size: 1.5rem;
+}
+
+.contact-form h2 {
+  color: beige;
+  font-weight: 800;
+  font-size: 1.7rem;
+}
+
+.contact-form .contact-items {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+
+.contact-form .contact-items a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-primary);
+  padding: 1rem;
+  font-size: 1.5rem;
+  color: beige;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.contact-form .contact-items a:hover {
+  color: white;
+  background-color: var(--color-primary-hover);
+}
+
+.contact-form .project-info-buttons {
+  background-color: rgba(0, 0, 0, 0.438);
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.contact-form .project-info-buttons a {
+  text-decoration: none;
+  color: beige;
+}
+
+/* CONTACT FORM */
+
+/* MAIN */
+main {
+  width: 70%;
+}
+
+main section {
+  padding: 6rem 2rem 2rem 2rem;
+}
+/* MAIN */

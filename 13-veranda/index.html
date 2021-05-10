@@ -22,9 +22,12 @@
     <link rel="stylesheet" href="assets/css/bootstrap-theme.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
-  <body>
+  <body data-bs-spy="scroll" data-bs-target="#main-navbar">
     <header>
-      <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+      <nav
+        id="main-navbar"
+        class="navbar navbar-expand-lg navbar-light bg-light"
+      >
         <div class="container-fluid">
           <a
             class="navbar-brand"
@@ -105,55 +108,40 @@
     </header>
     <section class="banner">
       <div id="main-slider" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#main-slider"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#main-slider"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#main-slider"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-        </div>
         <div class="carousel-inner">
-          <div class="carousel-item active" style="background-image: url('assets/img/slider/slide1.jpg');">
-          </div>
-          <div class="carousel-item" style="background-image: url('assets/img/slider/slide2.jpg');">
-          </div>
-          <div class="carousel-item"  style="background-image: url('assets/img/slider/slide3.jpg');">
-           
-          </div>
+          <div
+            class="carousel-item active"
+            style="background-image: url('assets/img/slider/slide1.jpg')"
+          ></div>
+          <div
+            class="carousel-item"
+            style="background-image: url('assets/img/slider/slide2.jpg')"
+          ></div>
+          <div
+            class="carousel-item"
+            style="background-image: url('assets/img/slider/slide3.jpg')"
+          ></div>
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#main-slider"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#main-slider"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+        <div class="carousel-control-buttons">
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#main-slider"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#main-slider"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
       </div>
     </section>
     <section class="contact-form">
@@ -167,53 +155,49 @@
       </div>
 
       <form action="">
-        <div class="form-floating mb-3">
+        <div class="mb-3">
           <input
             type="text"
-            class="form-control"
+            class="form-control form-control-sm"
             id="name"
             placeholder="Ad Soyad"
             required
           />
-          <label for="floatingInput">Ad Soyad</label>
         </div>
-        <div class="form-floating mb-3">
+        <div class="mb-3">
           <input
             type="email"
-            class="form-control"
+            class="form-control form-control-sm"
             id="email"
             placeholder="Eposta adresiniz"
             required
           />
-          <label for="floatingInput">Eposta adresiniz</label>
         </div>
-        <div class="form-floating mb-3">
+        <div class="mb-3">
           <input
             type="text"
-            class="form-control"
+            class="form-control form-control-sm"
             id="phone"
             placeholder="Telefon"
             required
           />
-          <label for="floatingInput">Telefon</label>
         </div>
-        <div class="form-floating">
+        <div class="mb-3">
           <textarea
-            class="form-control"
+            class="form-control form-control-sm"
             placeholder="Mesajınız"
             id="message"
           ></textarea>
-          <label for="floatingTextarea">Mesajınız</label>
         </div>
         <button class="btn btn-primary">
           <i class="fas fa-paper-plane"></i> Gönder
         </button>
       </form>
 
-      <div>
-        <a href="#"><i class="fas fa-video"></i> Tanıtım Filmi</a>
-        <a href="#"><i class="fas fa-book"></i> Katalog</a>
-        <a href="#"><i class="fas fa-street-view"></i> Sanal Tur</a>
+      <div class="project-info-buttons">
+        <a href="#"><i class="fas fa-video"></i><br />Tanıtım Filmi</a>
+        <a href="#"><i class="fas fa-book"></i><br />Katalog</a>
+        <a href="#"><i class="fas fa-street-view"></i><br />Sanal Tur</a>
       </div>
     </section>
     <main>
