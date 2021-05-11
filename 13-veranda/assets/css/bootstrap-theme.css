@@ -8,10 +8,6 @@
   border-color: var(--color-primary-hover);
 }
 
-.navbar {
-  position: relative;
-}
-
 .navbar::before {
   content: "";
   position: absolute;
@@ -56,4 +52,18 @@
     bottom: -2px;
     width: 100%;
   }
+}
+
+.nav-pills .nav-link.active {
+  background: none;
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.nav-pills .nav-link.active::before {
+  content: "[";
+}
+
+.nav-pills .nav-link.active::after {
+  content: "]";
 }

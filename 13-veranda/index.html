@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap-theme.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
-  <body data-bs-spy="scroll" data-bs-target="#main-navbar">
+  <body data-bs-spy="scroll" data-bs-target="#main-navbar" id="home">
     <header>
       <nav
         id="main-navbar"
@@ -52,6 +52,16 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item active">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="#home"
+                  title="Veranda Villa Projesi"
+                >
+                  <i class="fas fa-home"></i>
+                </a>
+              </li>
               <li class="nav-item">
                 <a
                   class="nav-link"
@@ -143,15 +153,39 @@
           </button>
         </div>
       </div>
+      <div class="slogan">
+        <img
+          src="assets/img/slogan.png"
+          alt="İzmir Güzelbahçe Villa Projesi - Ege'nin Güneşini Veranda'da Yaşayın"
+        />
+      </div>
     </section>
     <section class="contact-form">
       <h5>Kampanyamızdan</h5>
       <h2>HEMEN YARARLANIN</h2>
 
       <div class="contact-items">
-        <a href="https://wa.me/905309177077"><i class="fab fa-whatsapp"></i></a>
-        <a href="tel:905309177077"><i class="fas fa-phone"></i></a>
-        <a href="#"><i class="fas fa-comment-dots"></i></a>
+        <a
+          href="https://wa.me/905309177077"
+          data-bs-toggle="tooltip"
+          data-bs-placement="top"
+          title="Whatsapp"
+          ><i class="fab fa-whatsapp"></i
+        ></a>
+        <a
+          href="tel:905309177077"
+          data-bs-toggle="tooltip"
+          data-bs-placement="top"
+          title="Bizi Arayın"
+          ><i class="fas fa-phone"></i
+        ></a>
+        <a
+          href="#"
+          data-bs-toggle="tooltip"
+          data-bs-placement="top"
+          title="Online Chat"
+          ><i class="fas fa-comment-dots"></i
+        ></a>
       </div>
 
       <form action="">
@@ -205,7 +239,9 @@
     </section>
     <main>
       <section id="project" class="project">
-        <h2 class="section-header">Ege'nin Güneşini Veranda'da Yaşayın</h2>
+        <div class="section-header">
+          <h2>Ege'nin Güneşini Veranda'da Yaşayın</h2>
+        </div>
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae
           nostrum nobis a omnis, numquam quo, amet earum minima illo aliquam
@@ -227,7 +263,7 @@
         ></iframe>
       </section>
       <section id="technical" class="technical">
-        <h2 class="section-header">Teknik Özellikler</h2>
+        <div class="section-header"><h2>Teknik Özellikler</h2></div>
 
         <ul>
           <li>Dış Cephe Mantolama</li>
@@ -249,7 +285,7 @@
         </ul>
       </section>
       <section id="gallery" class="gallery">
-        <h2 class="section-header">Galeri</h2>
+        <div class="section-header"><h2>Galeri</h2></div>
 
         <nav
           class="nav nav-pills justify-content-center flex-column flex-sm-row"
@@ -1045,7 +1081,7 @@
         </div>
       </section>
       <section id="plans" class="plans">
-        <h2 class="section-header">Kat Planları</h2>
+        <div class="section-header"><h2>Kat Planları</h2></div>
 
         <nav
           class="nav nav-pills justify-content-center flex-column flex-sm-row"
@@ -1297,7 +1333,7 @@
         </div>
       </section>
       <section id="location" class="location">
-        <h2 class="section-header">Konum</h2>
+        <div class="section-header"><h2>Konum</h2></div>
 
         <div>
           <iframe
@@ -1311,9 +1347,9 @@
         </div>
       </section>
       <section id="contact" class="contact">
-        <h2 class="section-header">İletişim</h2>
+        <div class="section-header"><h2>İletişim</h2></div>
 
-        <div class="row">
+        <div class="row g-3">
           <div class="col-12">
             Yunusoğlu Gayrimenkul, Yatırım, İnşaat, Taahhüt, Mimarlık,
             Akaryakıt, Turizm Sanayi ve Tic. A.Ş.
@@ -1322,36 +1358,38 @@
             <i class="fas fa-map-marker-alt"></i> Limanreis Mahallesi,
             Mithatpaşa Cd. No: 733, 35320 Narlıdere/İzmir
           </div>
-          <div class="col-6">
+          <div class="col-sm-4">
             <i class="fas fa-phone"></i>
             <a href="tel:+902322385444">+90 (232) 238 5 444</a>
           </div>
-          <div class="col-6">
+          <div class="col-sm-4">
             <i class="fas fa-mobile-alt"></i>
             <a href="tel:+905309177077">+90 (530) 917 70 77</a>
           </div>
-          <div class="col-6">
+          <div class="col-sm-4">
             <i class="fas fa-fax"></i> +90 (232) 239 38 38
           </div>
-          <div class="col-6">
+          <div class="col-12">
             <i class="fas fa-anchor"></i>
             <a href="https://yunusoglu.com.tr" target="_blank"
               >yunusoglu.com.tr</a
             >
           </div>
-          <div class="col-6">
-            <a href="#">
-              <i class="fab fa-facebook"></i>
-            </a>
-            <a href="#">
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a href="#">
-              <i class="fab fa-youtube"></i>
-            </a>
-            <a href="#">
-              <i class="fab fa-linkedin"></i>
-            </a>
+          <div class="col-12">
+            <div class="social-media">
+              <a href="#" target="_blank">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a href="#" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" target="_blank">
+                <i class="fab fa-youtube"></i>
+              </a>
+              <a href="#" target="_blank">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -1364,5 +1402,14 @@
 
     <script src="assets/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/lib/fslightbox/fslightbox.js"></script>
+
+    <script>
+      var tooltipTriggerList = [].slice.call(
+        document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      );
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
+      });
+    </script>
   </body>
 </html>

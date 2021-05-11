@@ -3,11 +3,40 @@
 :root {
   --color-primary: #905729;
   --color-primary-hover: #693e1a;
+  --color-primary-transparent: #9057296c;
 }
 
 body {
   font-family: "Montserrat";
   position: relative;
+}
+
+a:hover {
+  color: var(--color-primary);
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.section-header h2 {
+  border: 1px dotted var(--color-primary);
+  display: inline-block;
+  text-align: center;
+  padding: 1rem 2rem;
+  position: relative;
+}
+
+.section-header h2::after {
+  content: "";
+  position: absolute;
+  height: 10px;
+  width: 50%;
+  bottom: 0;
+  left: 50%;
+  background-color: var(--color-primary);
+  transform: translate(-50%, 50%);
 }
 
 /* COMMON */
@@ -23,6 +52,9 @@ nav.navbar {
 /*NAVBAR*/
 
 /* BANNER */
+.banner {
+  position: relative;
+}
 .banner .carousel-item {
   height: 100vh;
   background-position: center center;
@@ -42,13 +74,20 @@ nav.navbar {
   z-index: 99;
 }
 
+.slogan {
+  position: absolute;
+  top: 7rem;
+  left: 1rem;
+  z-index: 9;
+}
+
 /* BANNER */
 
 /* CONTACT FORM */
 .contact-form {
-  background-color: rgba(0, 0, 0, 0.589);
+  background-color: var(--color-primary-transparent);
   height: 100vh;
-  width: 30vw;
+  width: 30%;
   text-align: center;
   position: fixed;
   right: 0;
@@ -56,16 +95,27 @@ nav.navbar {
   padding: 7rem 2rem 2rem 2rem;
 }
 
+@media (max-width: 992px) {
+  .contact-form {
+    position: static;
+    height: auto;
+    width: 100%;
+    padding: 2rem;
+  }
+}
+
 .contact-form h5 {
-  color: beige;
-  font-weight: 100;
+  color: white;
+  font-weight: 400;
   font-size: 1.5rem;
+  text-shadow: 0px 0px 10px #000000;
 }
 
 .contact-form h2 {
-  color: beige;
+  color: white;
   font-weight: 800;
   font-size: 1.7rem;
+  text-shadow: 0px 0px 10px #000000;
 }
 
 .contact-form .contact-items {
@@ -92,7 +142,7 @@ nav.navbar {
 }
 
 .contact-form .project-info-buttons {
-  background-color: rgba(0, 0, 0, 0.438);
+  background-color: rgba(0, 0, 0, 0.623);
   padding: 0.5rem 1rem;
   display: flex;
   justify-content: space-between;
@@ -104,6 +154,13 @@ nav.navbar {
   color: beige;
 }
 
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+
 /* CONTACT FORM */
 
 /* MAIN */
@@ -111,7 +168,95 @@ main {
   width: 70%;
 }
 
+@media (max-width: 992px) {
+  main {
+    width: 100%;
+  }
+}
+
 main section {
-  padding: 6rem 2rem 2rem 2rem;
+  padding: 5rem 2rem 1rem 2rem;
 }
 /* MAIN */
+
+/* TECHNICAL */
+
+section.technical ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  text-align: center;
+}
+
+section.technical ul li {
+  padding: 1rem;
+  width: 30%;
+}
+
+@media (max-width: 576px) {
+  section.technical ul li {
+    width: 50%;
+  }
+}
+
+section.technical ul li::before {
+  content: "\f559";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  display: block;
+  text-align: center;
+  font-size: 1.4rem;
+  color: var(--color-primary);
+}
+
+/* TECHNICAL */
+
+/* CONTACT */
+
+section.contact {
+  text-align: center;
+}
+
+section.contact a {
+  text-decoration: none;
+}
+
+section.contact .social-media {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+section.contact .social-media a {
+  border: 1px solid var(--color-primary);
+  font-size: 1rem;
+  color: black;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+/* CONTACT */
+
+/* FOOTER */
+footer {
+  background-color: var(--color-primary);
+  padding: 3rem;
+  text-align: center;
+  width: 70%;
+  color: rgb(196, 196, 196);
+  margin-top: 2rem;
+}
+
+footer a {
+  color: rgb(196, 196, 196);
+}
+
+footer a:hover {
+  color: rgb(241, 241, 241);
+}
+/* FOOTER */
