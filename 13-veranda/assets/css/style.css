@@ -147,6 +147,8 @@ nav.navbar {
   display: flex;
   justify-content: space-between;
   margin-top: 1rem;
+  border-radius: 0.4rem;
+  font-size: 0.8rem;
 }
 
 .contact-form .project-info-buttons a {
@@ -154,10 +156,15 @@ nav.navbar {
   color: beige;
 }
 
+.contact-form .project-info-buttons span {
+  width: 1px;
+  background-color: white;
+}
+
 .contact-form input:focus,
 .contact-form textarea:focus {
   outline: none;
-  border: none;
+  border: 1px solid var(--color-primary);
   box-shadow: none;
 }
 
@@ -213,6 +220,34 @@ section.technical ul li::before {
 
 /* TECHNICAL */
 
+/* LOCATION */
+.location .map {
+  position: relative;
+}
+
+.location .map-detail {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 1rem;
+  background-color: var(--color-primary-transparent);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+}
+
+.location .map-detail ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.location .map-detail ul li {
+  line-height: 1.7rem;
+}
+
+/* LOCATION */
+
 /* CONTACT */
 
 section.contact {
@@ -230,11 +265,13 @@ section.contact .social-media {
   justify-content: space-around;
 }
 section.contact .social-media a {
-  border: 1px solid var(--color-primary);
-  font-size: 1rem;
-  color: black;
+  background-color: var(--color-primary);
+  font-size: 1.2rem;
+  color: white;
   width: 2rem;
   height: 2rem;
+  padding: 0.3rem;
+  border-radius: 0.2rem;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -250,6 +287,12 @@ footer {
   width: 70%;
   color: rgb(196, 196, 196);
   margin-top: 2rem;
+}
+
+@media (max-width: 992px) {
+  footer {
+    width: 100%;
+  }
 }
 
 footer a {
