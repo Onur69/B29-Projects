@@ -1,0 +1,9 @@
+:root {
+  --color1: #ecdeec;
+  --color2: #611f69;
+  --color2-hover: #4a154b;
+}
+
+body {
+  font-family: "Montserrat";
+}
