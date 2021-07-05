@@ -2,6 +2,7 @@
   --color1: #ecdeec;
   --color2: #611f69;
   --color2-hover: #4a154b;
+  --color3: rgb(208, 112, 231);
 }
 
 body {
@@ -12,14 +13,33 @@ a {
   color: var(--color2) !important;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color2);
+}
+
 .btn-primary {
   background-color: var(--color2);
   border-color: var(--color2);
   font-size: 0.9rem;
   padding: 1rem 2rem;
+  color: white !important;
+}
+
+.btn-primary:hover {
+  background-color: var(--color2-hover);
+  border-color: var(--color2-hover);
 }
 
 /* NAVBAR */
+.navbar {
+  box-shadow: 2px 0 5px var(--color3);
+}
+
 .navbar .nav-link {
   font-weight: 700;
 }
@@ -34,11 +54,79 @@ a {
   background-size: 60%, 40%;
   display: flex;
   align-items: center;
-  padding-left: 7rem;
-  padding-right: 3rem;
+  justify-content: center;
 }
 
 .banner h1 {
-  color: var(--color2);
+  text-align: center;
+  width: 70%;
 }
 /* BANNER */
+
+/* ARACLAR */
+.araclar {
+  background-color: var(--color1);
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  text-align: center;
+}
+
+.araclar .card {
+  background-color: white;
+  box-shadow: 0px 0px 6px var(--color3);
+}
+
+.araclar .card h5 {
+  margin-top: 1rem;
+}
+
+.araclar .arac-ikon {
+  position: relative;
+}
+
+.araclar .arac-ikon span {
+  width: 4rem;
+  height: 4rem;
+  display: inline-block;
+  border-radius: 50%;
+  background-color: var(--color1);
+}
+
+.araclar .arac-ikon img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 45px;
+}
+/* ARACLAR */
+
+/* SAYACLAR */
+.sayaclar {
+  padding: 3rem;
+  text-align: center;
+  border-top: 3px solid var(--color2);
+  border-bottom: 3px solid var(--color2);
+}
+/* SAYACLAR */
+
+/* HAKKIMIZDA */
+.hakkimizda {
+  background-color: var(--color1);
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.social span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  font-size: 1.1rem;
+  color: var(--color2);
+  box-shadow: 0 0 3px var(--color3);
+  margin: 0.5rem;
+}
+/* HAKKIMIZDA */
