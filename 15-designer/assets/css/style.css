@@ -3,6 +3,7 @@
   --color2: #611f69;
   --color2-hover: #4a154b;
   --color3: rgb(208, 112, 231);
+  --color4: #ecb22e;
 }
 
 body {
@@ -11,6 +12,7 @@ body {
 
 a {
   color: var(--color2) !important;
+  text-decoration: none;
 }
 
 h1,
@@ -43,6 +45,12 @@ h6 {
 .navbar .nav-link {
   font-weight: 700;
 }
+
+@media (max-width: 370px) {
+  .navbar-brand img {
+    width: 200px;
+  }
+}
 /* NAVBAR */
 
 /* BANNER */
@@ -74,6 +82,20 @@ h6 {
 .araclar .card {
   background-color: white;
   box-shadow: 0px 0px 6px var(--color3);
+}
+
+.araclar .card:hover {
+  background-color: var(--color3);
+  color: white;
+  cursor: zoom-in;
+}
+
+.araclar .card:hover h5 {
+  color: white;
+}
+
+.araclar .card:hover .arac-ikon span {
+  background-color: var(--color4);
 }
 
 .araclar .card h5 {
@@ -114,6 +136,7 @@ h6 {
   background-color: var(--color1);
   padding-top: 5rem;
   padding-bottom: 5rem;
+  color: var(--color2);
 }
 
 .social span {
@@ -130,3 +153,30 @@ h6 {
   margin: 0.5rem;
 }
 /* HAKKIMIZDA */
+
+/* GUNUN SOZU */
+.gunun_sozu {
+  text-align: center;
+  color: var(--color2);
+  padding: 3rem;
+}
+/* GUNUN SOZU */
+
+/* FOOTER */
+.footer {
+  padding: 3rem;
+  box-shadow: 0 -3px 5px var(--color3);
+}
+
+.footer ul {
+  list-style: none;
+  display: flex;
+  font-weight: 600;
+  padding: 0;
+}
+
+.footer ul li {
+  margin-left: 0.7rem;
+}
+
+/* FOOTER */
