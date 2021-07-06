@@ -4,6 +4,7 @@
   --color2-hover: #4a154b;
   --color3: rgb(208, 112, 231);
   --color4: #ecb22e;
+  --color5: #e01e5a;
 }
 
 body {
@@ -168,15 +169,34 @@ h6 {
   box-shadow: 0 -3px 5px var(--color3);
 }
 
-.footer ul {
-  list-style: none;
-  display: flex;
+.footer nav {
   font-weight: 600;
-  padding: 0;
 }
 
-.footer ul li {
+.footer nav a {
   margin-left: 0.7rem;
 }
 
 /* FOOTER */
+
+/* ILETISIM */
+.iletisim-banner {
+  background-color: var(--color1);
+  padding: 6rem;
+}
+
+.iletisim-banner ul {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0 0 0;
+  color: var(--color2);
+}
+
+.iletisim-banner ul li {
+  line-height: 2.5rem;
+}
+
+.iletisim-banner ul li i {
+  color: var(--color4);
+}
+/* ILETISIM */
