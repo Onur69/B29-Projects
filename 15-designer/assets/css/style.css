@@ -199,4 +199,27 @@ h6 {
 .iletisim-banner ul li i {
   color: var(--color4);
 }
+
+.iletism-formu {
+  padding: 3rem;
+}
+
+.iletism-formu .input-group-text {
+  background: none;
+  border-right: 0;
+  border-color: var(--color2);
+  color: var(--color2);
+}
+
+.iletism-formu input {
+  border-left: 0;
+  border-color: var(--color2);
+  color: var(--color2);
+}
+
+.iletism-formu textarea {
+  border-color: var(--color2);
+  color: var(--color2);
+}
+
 /* ILETISIM */

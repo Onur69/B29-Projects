@@ -132,9 +132,115 @@
     <!-- BANNER -->
 
     <!-- ILETISIM FORMU -->
-    <section class="araclar">
+    <section class="iletism-formu">
       <div class="container">
-        <h2 class="section-header">İletişim Formu</h2>
+        <h2 class="section-header text-center">İletişim Formu</h2>
+
+        <form
+          action="https://formsubmit.co/zsari@techproeducation.com"
+          method="post"
+        >
+          <div class="row">
+            <div class="col-md-6">
+              <div class="mb-3">
+                <label for="ad" class="form-label">Adınız</label>
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="basic-addon1"
+                    ><i class="fas fa-user"></i
+                  ></span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="ad"
+                    placeholder=""
+                    required
+                    minlength="2"
+                  />
+                </div>
+                <div class="form-text">
+                  Adınız en az 2 karakter uzunluğunda olmalıdır
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="soyad" class="form-label">Soyadınız</label>
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="basic-addon1"
+                    ><i class="fas fa-user"></i
+                  ></span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="soyad"
+                    placeholder=""
+                    required
+                    minlength="2"
+                  />
+                </div>
+                <div class="form-text">
+                  Soyadınız en az 2 karakter uzunluğunda olmalıdır
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="telefon" class="form-label">Telefon</label>
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="basic-addon1"
+                    ><i class="fas fa-phone"></i
+                  ></span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="telefon"
+                    placeholder=""
+                    required
+                    minlength="11"
+                  />
+                </div>
+                <div class="form-text">
+                  Telefon en az 11 karakter uzunluğunda olmalıdır
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="eposta" class="form-label">E-Posta</label>
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="basic-addon1"
+                    ><i class="fas fa-envelope"></i
+                  ></span>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="eposta"
+                    placeholder=""
+                    required
+                    minlength="7"
+                  />
+                </div>
+                <div class="form-text">E-posta “@” işareti içermelidir</div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="eposta" class="form-label">E-Posta</label>
+              <textarea
+                type="text"
+                class="form-control"
+                id="mesaj"
+                placeholder=""
+                required
+                minlength="20"
+                rows="16"
+              >
+              </textarea>
+
+              <div class="form-text">
+                Mesajınız en az 20 en fazla 500 karakter uzunluğunda olmalıdır
+              </div>
+            </div>
+            <div class="col-12 pt-3">
+              <button class="btn btn-primary">
+                <i class="fas fa-paper-plane"></i> Gönder
+              </button>
+            </div>
+          </div>
+        </form>
       </div>
     </section>
     <!-- ILETISIM FORMU -->
