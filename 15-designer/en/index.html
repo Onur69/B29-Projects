@@ -46,14 +46,14 @@
       crossorigin="anonymous"
     />
 
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
   </head>
   <body>
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container">
         <a class="navbar-brand" href="#">
-          <img src="assets/img/logo.png" />
+          <img src="../assets/img/logo.png" />
         </a>
         <button
           class="navbar-toggler"
@@ -69,8 +69,11 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-4">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html"
-                >Ana Sayfa</a
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="en/index.html"
+                >Home</a
               >
             </li>
             <li class="nav-item">
@@ -107,159 +110,175 @@
     <!-- NAVBAR -->
 
     <!-- BANNER -->
-    <section class="iletisim-banner">
-      <div class="container">
-        <div class="row g-3">
-          <div class="col-md-6">
-            <h1>İletişim Bilgileri</h1>
-            <ul>
-              <li><i class="fas fa-phone"></i> +90 (555) 555 55 55</li>
-              <li><i class="fas fa-envelope"></i> deneme@gmail.com</li>
-              <li>
-                <i class="fas fa-map-marker-alt"></i> Kuzey Atlas Makina, Liman,
-                62. Sk. 86 B, 07130 Konyaaltı/Antalya
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-6">
-            <div
-              style="
-                padding: 10px;
-                background: #ededee;
-                border-radius: 20px;
-                margin: 0 auto;
-                overflow: hidden;
-              "
-            >
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3193.010057738741!2d30.596776414780862!3d36.842235173033046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14c395ea3d98c807%3A0x1317da37be9b9707!2sKuzey%20Atlas%20Makina!5e0!3m2!1str!2str!4v1625598766329!5m2!1str!2str"
-                width="100%"
-                height="200"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-                style="border-radius: 2rem"
-              ></iframe>
-            </div>
-          </div>
+    <section class="banner container-fluid">
+      <div class="row">
+        <div class="col-md-6 ilk-bolum">
+          <h1>
+            <span class="fw-lighter">Dünya</span> Tasarımla
+            <span class="fw-lighter">Güzelleşir</span>
+          </h1>
+        </div>
+        <div class="col-md-6 text-center">
+          <img src="../assets/img/banner/banner-shape-3.png" alt="" />
         </div>
       </div>
     </section>
     <!-- BANNER -->
 
-    <!-- ILETISIM FORMU -->
-    <section class="iletism-formu">
+    <!-- ARAÇLAR -->
+    <section class="araclar">
       <div class="container">
-        <h2 class="section-header text-center">İletişim Formu</h2>
+        <h2 class="section-header">Araçlar</h2>
 
-        <form
-          action="https://formsubmit.co/zsari@techproeducation.com"
-          method="post"
-        >
-          <div class="row">
-            <div class="col-md-6">
-              <div class="mb-3">
-                <label for="ad" class="form-label">Adınız</label>
-                <div class="input-group mb-3">
-                  <span class="input-group-text" id="basic-addon1"
-                    ><i class="fas fa-user"></i
-                  ></span>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="ad"
-                    placeholder=""
-                    required
-                    minlength="2"
-                  />
+        <div class="row mt-3 g-5">
+          <div class="col-sm-6 col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <div class="arac-ikon">
+                  <span></span>
+                  <img src="../assets/img/services/service-html5.png" alt="" />
                 </div>
-                <div class="form-text">
-                  Adınız en az 2 karakter uzunluğunda olmalıdır
-                </div>
+                <h5>HTML & CSS</h5>
               </div>
-              <div class="mb-3">
-                <label for="soyad" class="form-label">Soyadınız</label>
-                <div class="input-group mb-3">
-                  <span class="input-group-text" id="basic-addon1"
-                    ><i class="fas fa-user"></i
-                  ></span>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="soyad"
-                    placeholder=""
-                    required
-                    minlength="2"
-                  />
-                </div>
-                <div class="form-text">
-                  Soyadınız en az 2 karakter uzunluğunda olmalıdır
-                </div>
-              </div>
-              <div class="mb-3">
-                <label for="telefon" class="form-label">Telefon</label>
-                <div class="input-group mb-3">
-                  <span class="input-group-text" id="basic-addon1"
-                    ><i class="fas fa-phone"></i
-                  ></span>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="telefon"
-                    placeholder=""
-                    required
-                    minlength="11"
-                  />
-                </div>
-                <div class="form-text">
-                  Telefon en az 11 karakter uzunluğunda olmalıdır
-                </div>
-              </div>
-              <div class="mb-3">
-                <label for="eposta" class="form-label">E-Posta</label>
-                <div class="input-group mb-3">
-                  <span class="input-group-text" id="basic-addon1"
-                    ><i class="fas fa-envelope"></i
-                  ></span>
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="eposta"
-                    placeholder=""
-                    required
-                    minlength="7"
-                  />
-                </div>
-                <div class="form-text">E-posta “@” işareti içermelidir</div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <label for="eposta" class="form-label">E-Posta</label>
-              <textarea
-                type="text"
-                class="form-control"
-                id="mesaj"
-                placeholder=""
-                required
-                minlength="20"
-                rows="16"
-              >
-              </textarea>
-
-              <div class="form-text">
-                Mesajınız en az 20 en fazla 500 karakter uzunluğunda olmalıdır
-              </div>
-            </div>
-            <div class="col-12 pt-3">
-              <button class="btn btn-primary">
-                <i class="fas fa-paper-plane"></i> Gönder
-              </button>
             </div>
           </div>
-        </form>
+          <div class="col-sm-6 col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <div class="arac-ikon">
+                  <span></span>
+                  <img
+                    src="../assets/img/services/service-illustrator.png"
+                    alt=""
+                  />
+                </div>
+                <h5>ILLUSTRATOR</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <div class="arac-ikon">
+                  <span></span>
+                  <img
+                    src="../assets/img/services/service-photoshop.png"
+                    alt=""
+                  />
+                </div>
+                <h5>PHOTOSHOP</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <div class="arac-ikon">
+                  <span></span>
+                  <img src="../assets/img/services/service-figma.png" alt="" />
+                </div>
+                <h5>FIGMA</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <div class="arac-ikon">
+                  <span></span>
+                  <img
+                    src="../assets/img/services/service-wordpress.png"
+                    alt=""
+                  />
+                </div>
+                <h5>WORDPRESS</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <div class="arac-ikon">
+                  <span></span>
+                  <img src="../assets/img/services/service-seo.png" alt="" />
+                </div>
+                <h5>SEO</h5>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-    <!-- ILETISIM FORMU -->
+    <!-- ARAÇLAR -->
+
+    <!-- SAYACLAR -->
+    <section class="sayaclar">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-md-4">
+            <h3>53</h3>
+            <h6>Proje</h6>
+          </div>
+          <div class="col-md-4">
+            <h3>53</h3>
+            <h6>Mutlu Müşteri</h6>
+          </div>
+          <div class="col-md-4">
+            <h3>486</h3>
+            <h6>Kahve</h6>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SAYACLAR -->
+
+    <!-- HAKKIMIZDA -->
+    <section class="hakkimizda">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-md-6 text-center text-md-start">
+            <h2>Hakkımda</h2>
+            <p>
+              Merhabalar ben .... 5 senedir grafik tasarım işiyle uğraşmaktayım.
+              Sektörde bugüne kadar kartvizit, logo, sosyal medya tasarımları,
+              web sitesi tasarımları gibi birçok alanda hizmet verdim.
+            </p>
+            <a href="#" class="btn btn-primary"
+              ><i class="fas fa-download"></i> CV İndir</a
+            >
+          </div>
+          <div
+            class="
+              col-md-1
+              order-2 order-md-1
+              social
+              d-flex
+              flex-md-column
+              justify-content-center
+            "
+          >
+            <span><i class="fab fa-instagram"></i></span>
+            <span><i class="fab fa-facebook"></i></span>
+            <span><i class="fab fa-linkedin"></i></span>
+            <span><i class="fab fa-twitter"></i></span>
+          </div>
+          <div class="col-md-5 order-1 order-md-2">
+            <img src="assets/img/about-us.png" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- HAKKIMIZDA -->
+
+    <!-- GUNUN SOZU-->
+    <section class="gunun_sozu">
+      <p>
+        “Tasarım kültürü yaratır. Kültür değerleri şekillendirir. Değerler
+        geleceğe yön verir.”
+      </p>
+      <h6>Robert L. Peters</h6>
+    </section>
+    <!-- GUNUN SOZU-->
 
     <!-- FOOTER -->
     <section class="footer text-center">
